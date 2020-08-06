@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		BA975DC924DA86B30000F5E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA975DC824DA86B30000F5E8 /* AppDelegate.swift */; };
 		BA975DCB24DA86B30000F5E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA975DCA24DA86B30000F5E8 /* SceneDelegate.swift */; };
-		BA975DCD24DA86B30000F5E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA975DCC24DA86B30000F5E8 /* ViewController.swift */; };
 		BA975DD024DA86B30000F5E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA975DCE24DA86B30000F5E8 /* Main.storyboard */; };
 		BA975DD224DA86B80000F5E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA975DD124DA86B80000F5E8 /* Assets.xcassets */; };
 		BA975DD524DA86B80000F5E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA975DD324DA86B80000F5E8 /* LaunchScreen.storyboard */; };
+		BA975DE024DA8AC70000F5E8 /* AlarmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA975DDF24DA8AC70000F5E8 /* AlarmsViewController.swift */; };
+		BA975DE224DA93D70000F5E8 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA975DE124DA93D70000F5E8 /* Alarm.swift */; };
+		BA975DE524DC95380000F5E8 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA975DE424DC95380000F5E8 /* Identifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA975DC524DA86B30000F5E8 /* DidYouKnowAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DidYouKnowAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA975DC824DA86B30000F5E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA975DCA24DA86B30000F5E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA975DCC24DA86B30000F5E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA975DCF24DA86B30000F5E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA975DD124DA86B80000F5E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA975DD424DA86B80000F5E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA975DD624DA86B80000F5E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA975DDF24DA8AC70000F5E8 /* AlarmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsViewController.swift; sourceTree = "<group>"; };
+		BA975DE124DA93D70000F5E8 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		BA975DE424DC95380000F5E8 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		BA975DC724DA86B30000F5E8 /* DidYouKnowAlarm */ = {
 			isa = PBXGroup;
 			children = (
-				BA975DC824DA86B30000F5E8 /* AppDelegate.swift */,
-				BA975DCA24DA86B30000F5E8 /* SceneDelegate.swift */,
-				BA975DCC24DA86B30000F5E8 /* ViewController.swift */,
-				BA975DCE24DA86B30000F5E8 /* Main.storyboard */,
+				BA975DE324DC94FF0000F5E8 /* App */,
+				BA975DDE24DA89EC0000F5E8 /* Models */,
+				BA975DDC24DA89B90000F5E8 /* Controllers */,
+				BA975DDD24DA89CB0000F5E8 /* Views */,
 				BA975DD124DA86B80000F5E8 /* Assets.xcassets */,
-				BA975DD324DA86B80000F5E8 /* LaunchScreen.storyboard */,
 				BA975DD624DA86B80000F5E8 /* Info.plist */,
 			);
 			path = DidYouKnowAlarm;
+			sourceTree = "<group>";
+		};
+		BA975DDC24DA89B90000F5E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA975DDF24DA8AC70000F5E8 /* AlarmsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BA975DDD24DA89CB0000F5E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA975DD324DA86B80000F5E8 /* LaunchScreen.storyboard */,
+				BA975DCE24DA86B30000F5E8 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA975DDE24DA89EC0000F5E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA975DE124DA93D70000F5E8 /* Alarm.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA975DE324DC94FF0000F5E8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA975DCA24DA86B30000F5E8 /* SceneDelegate.swift */,
+				BA975DC824DA86B30000F5E8 /* AppDelegate.swift */,
+				BA975DE424DC95380000F5E8 /* Identifier.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA975DCD24DA86B30000F5E8 /* ViewController.swift in Sources */,
+				BA975DE024DA8AC70000F5E8 /* AlarmsViewController.swift in Sources */,
+				BA975DE224DA93D70000F5E8 /* Alarm.swift in Sources */,
 				BA975DC924DA86B30000F5E8 /* AppDelegate.swift in Sources */,
+				BA975DE524DC95380000F5E8 /* Identifier.swift in Sources */,
 				BA975DCB24DA86B30000F5E8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
