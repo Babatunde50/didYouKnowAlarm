@@ -15,6 +15,7 @@
 		BA975DE024DA8AC70000F5E8 /* AlarmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA975DDF24DA8AC70000F5E8 /* AlarmsViewController.swift */; };
 		BA975DE224DA93D70000F5E8 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA975DE124DA93D70000F5E8 /* Alarm.swift */; };
 		BA975DE524DC95380000F5E8 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA975DE424DC95380000F5E8 /* Identifier.swift */; };
+		BAB0640C24E1D0450089AAEA /* AddEditAlarmControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB0640B24E1D0450089AAEA /* AddEditAlarmControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BA975DDF24DA8AC70000F5E8 /* AlarmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsViewController.swift; sourceTree = "<group>"; };
 		BA975DE124DA93D70000F5E8 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		BA975DE424DC95380000F5E8 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		BAB0640B24E1D0450089AAEA /* AddEditAlarmControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditAlarmControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				BA975DDF24DA8AC70000F5E8 /* AlarmsViewController.swift */,
+				BAB0640B24E1D0450089AAEA /* AddEditAlarmControllerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				BA975DE224DA93D70000F5E8 /* Alarm.swift in Sources */,
 				BA975DC924DA86B30000F5E8 /* AppDelegate.swift in Sources */,
 				BA975DE524DC95380000F5E8 /* Identifier.swift in Sources */,
+				BAB0640C24E1D0450089AAEA /* AddEditAlarmControllerViewController.swift in Sources */,
 				BA975DCB24DA86B30000F5E8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

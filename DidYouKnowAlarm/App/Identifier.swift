@@ -10,4 +10,5 @@ import Foundation
 
 struct Identifier {
     static let alarmCellIdentifier = "AlarmCell"
+    static let addAlarmSegue = "AddAlarmSegue"
 }

@@ -15,10 +15,7 @@ class AlarmsViewController: UITableViewController {
         Alarm(time: Date(), label: "My Day")
     ]
     
-    
-    @IBAction func addAlarmHandler(_ sender: UIBarButtonItem) {
-        print("Add a new Alarm Item")
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,6 +85,14 @@ class AlarmsViewController: UITableViewController {
     
     @IBAction func switchTapped(_ sender: UISwitch) {
        print("The switch is tapped!!!")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dist = segue.destination as! UINavigationController
+        if segue.identifier == Identifier.addAlarmSegue {
+            let addEditAlarmVC = dist.topViewController as! AddEditAlarmControllerViewController
+            print("YES")
+        }
     }
     
 }

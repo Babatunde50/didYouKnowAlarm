@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -57,19 +58,9 @@
                             </button>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="kAK-rS-TaY">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YeQ-0C-B78">
-                                <rect key="frame" x="322" y="7" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="tintColor" red="0.99215686270000003" green="0.79607843140000001" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" image="plus" catalog="system">
-                                    <color key="titleColor" red="0.99215686270000003" green="0.79607843140000001" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="titleShadowColor" red="0.99215686270000003" green="0.79607843140000001" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="kAK-rS-TaY">
                             <connections>
-                                <action selector="addAlarmHandler:" destination="DFh-KO-1S8" id="UQv-I7-Wme"/>
+                                <segue destination="0vP-RG-hCu" kind="presentation" identifier="AddAlarmSegue" id="sY9-TX-bRh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -77,6 +68,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="def-sJ-Zvk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1607.2463768115942" y="28.794642857142854"/>
+        </scene>
+        <!--Add Alarm-->
+        <scene sceneID="iDq-Wf-Da4">
+            <objects>
+                <viewController id="yGS-Si-rJv" customClass="AddEditAlarmControllerViewController" customModule="DidYouKnowAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zy3-2W-YN7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="U7R-Q4-pgF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Alarm" id="uXf-82-I1V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Tb-n3-b3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3293" y="29"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dFe-CT-wNn">
@@ -103,9 +110,27 @@
             </objects>
             <point key="canvasLocation" x="697.10144927536237" y="28.794642857142854"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zhi-Wc-xtb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0vP-RG-hCu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="LWY-U9-D5g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.058823529409999999" green="0.29803921570000003" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yGS-Si-rJv" kind="relationship" relationship="rootViewController" id="8BP-bO-45T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J5l-Sw-mCU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2448" y="36"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
     </resources>
 </document>
